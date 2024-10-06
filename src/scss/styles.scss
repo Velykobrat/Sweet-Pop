@@ -1,5 +1,17 @@
 @import './header.scss';
+@import './footer.scss';
+@import './common/reset.scss';
+@import './common/vars.scss';
+@import './common/mixins.scss';
+@import './common/breakpoints.scss';
+@import './home.scss';
+@import './aboutus.scss';
+@import './faq.scss';
+@import './benefits.scss';
 
+html {
+  scroll-behavior: smooth;
+}
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;

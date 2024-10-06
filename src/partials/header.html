@@ -1,10 +1,65 @@
 <header class="header">
-  <nav>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
+  <!-- Навігація для десктопу -->
+  <nav class="header-nav" aria-label="Main Navigation">
+    <ul class="header-nav-list">
+      <li class="header-nav-list-item">
+        <a class="header-nav-link" href="#home">Home</a>
+      </li>
+      <li class="header-nav-list-item">
+        <a class="header-nav-link" href="#aboutus">About us</a>
+      </li>
+      <li class="header-nav-list-item">
+        <a class="header-nav-link" href="#services">Gallery</a>
+      </li>
+      <li>
+        <a href="#home"
+          ><img
+            class="header-logo"
+            src="../img/Home/Logo game.png"
+            alt="logo-game"
+        /></a>
+      </li>
+      <li class="header-nav-list-item">
+        <a class="header-nav-link" href="#howtoplay">How to play</a>
+      </li>
+      <li class="header-nav-list-item">
+        <a class="header-nav-link" href="#benefits">Benefits</a>
+      </li>
+      <li class="header-nav-list-item">
+        <a class="header-nav-link" href="#faq">FAQ</a>
+      </li>
     </ul>
   </nav>
+  <!-- Навігація для мобілки (бургер-меню) -->
+  <nav class="header-nav-mobile" aria-label="Main Navigation for Mobile">
+    <!--Кнопка відкриття мобільного меню-->
+    <img class="header-logo" src="../img/Home/Logo game.png" alt="logo-game" />
+    <button class="burger-menu" aria-label="Open Navigation">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
+    <!--Кнопка закриття мобільного меню-->
+    <ul class="header-nav-list-mobile">
+      <button class="close-menu" aria-label="Close Navigation">
+        <img src="../img/Home/Burger menu.png" alt="Close menu" />
+      </button>
+      <li class="header-nav-list-item-mobile">
+        <a class="header-nav-link-mobile" href="#home">Home</a>
+      </li>
+      <li class="header-nav-list-item-mobile">
+        <a class="header-nav-link-mobile" href="#aboutus">About us</a>
+      </li>
+      <li class="header-nav-list-item-mobile">
+        <a class="header-nav-link-mobile" href="#services">Gallery</a>
+      </li>
+      <li class="header-nav-list-item-mobile">
+        <a class="header-nav-link-mobile" href="#howtoplay">How to play</a>
+      </li>
+      <li class="header-nav-list-item-mobile">
+        <a class="header-nav-link-mobile" href="#benefits">Benefits</a>
+      </li>
+      <li class="header-nav-list-item-mobile">
+        <a class="header-nav-link-mobile" href="#faq">FAQ</a>
+      </li>
 </header>
