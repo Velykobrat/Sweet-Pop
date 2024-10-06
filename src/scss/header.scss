@@ -36,7 +36,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
-    color: $_header_text_color;
+    color: $_yellow_text_color;
   }
   .header-nav-list-item:not(:nth-child(4)) {
     margin-right: 10px;
@@ -94,7 +94,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
-  color: $_header_text_color;
+  color: $_yellow_text_color;
 }
 .header-nav-list-item:not(:nth-child(4)) {
   margin-right: 10px;
@@ -151,7 +151,7 @@
   .burger-line {
     width: 100%;
     height: 3px;
-    background-color: $_header_text_color;
+    background-color: $_yellow_text_color;
     transition: all 0.3s ease;
   }
   .menu-open .header-nav-list-mobile {
@@ -193,7 +193,7 @@
 
   .header-nav-list-item-mobile {
     font-size: 18px;
-    color: $_header_text_color;
+    color: $_yellow_text_color;
   }
 
   .header-nav-link-mobile {
