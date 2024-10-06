@@ -1,0 +1,97 @@
+@media screen and (min-width: 768px) {
+  .howtoplay {
+    background: $_yellow_text_color;
+    padding: 60px 20px 40px 118px;
+  }
+
+  .howtoplay-title {
+    font-family: Norican;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .howtoplay-list {
+  }
+  .howtoplay-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 767px;
+    height: 177px;
+    background: #ffffff80;
+    margin-bottom: 20px;
+  }
+  .howtoplay-list-item:nth-child(even) {
+    margin-left: 400px;
+  }
+
+  .howtoplay-list-item-img {
+    width: 177px;
+    height: 177px;
+  }
+
+  .howtoplay-list-item-desc {
+    margin-left: 20px;
+    font-family: Signika Negative;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .howtoplay {
+    background: $_yellow_text_color;
+    padding: 32px 20px;
+  }
+
+  .howtoplay-title {
+    font-family: Norican;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .howtoplay-list {
+  }
+  .howtoplay-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 280px;
+    height: 309px;
+    background: #ffffff80;
+    margin-bottom: 20px;
+  }
+  .howtoplay-list-item-img {
+    width: 177px;
+    height: 177px;
+    margin-bottom: 8px;
+  }
+  .howtoplay-list-item:nth-child(1) .howtoplay-list-item-img,
+  .howtoplay-list-item:nth-child(3) .howtoplay-list-item-img,
+  .howtoplay-list-item:nth-child(4) .howtoplay-list-item-img {
+    margin-top: 26px;
+  }
+  .howtoplay-list-item:nth-child(2) .howtoplay-list-item-img {
+    margin-top: 8px;
+  }
+
+  .howtoplay-list-item-desc {
+    font-family: Signika Negative;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+  }
+}
