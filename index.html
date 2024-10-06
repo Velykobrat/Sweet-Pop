@@ -19,33 +19,99 @@
     <!-- Custom style -->
     
     <script type="module" crossorigin src="/Sweet-Pop/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Sweet-Pop/assets/index-67c98315.css">
+    <link rel="stylesheet" href="/Sweet-Pop/assets/index-0b1236e0.css">
   </head>
   <body>
     <header class="header">
-  <nav>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
+  <!-- Навігація для десктопу -->
+  <nav class="header-nav" aria-label="Main Navigation">
+    <ul class="header-nav-list">
+      <li class="header-nav-list-item">
+        <a class="header-nav-link" href="#home">Home</a>
+      </li>
+      <li class="header-nav-list-item">
+        <a class="header-nav-link" href="#aboutus">About us</a>
+      </li>
+      <li class="header-nav-list-item">
+        <a class="header-nav-link" href="#services">Gallery</a>
+      </li>
+      <li>
+        <a href="#home"
+          ><img
+            class="header-logo"
+            src="../img/Home/Logo game.png"
+            alt="logo-game"
+        /></a>
+      </li>
+      <li class="header-nav-list-item">
+        <a class="header-nav-link" href="#howtoplay">How to play</a>
+      </li>
+      <li class="header-nav-list-item">
+        <a class="header-nav-link" href="#benefits">Benefits</a>
+      </li>
+      <li class="header-nav-list-item">
+        <a class="header-nav-link" href="#faq">FAQ</a>
+      </li>
     </ul>
   </nav>
+  <!-- Навігація для мобілки (бургер-меню) -->
+  <nav class="header-nav-mobile" aria-label="Main Navigation for Mobile">
+    <!--Кнопка відкриття мобільного меню-->
+    <img class="header-logo" src="../img/Home/Logo game.png" alt="logo-game" />
+    <button class="burger-menu" aria-label="Open Navigation">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
+    <!--Кнопка закриття мобільного меню-->
+    <ul class="header-nav-list-mobile">
+      <button class="close-menu" aria-label="Close Navigation">
+        <img src="../img/Home/Burger menu.png" alt="Close menu" />
+      </button>
+      <li class="header-nav-list-item-mobile">
+        <a class="header-nav-link-mobile" href="#home">Home</a>
+      </li>
+      <li class="header-nav-list-item-mobile">
+        <a class="header-nav-link-mobile" href="#aboutus">About us</a>
+      </li>
+      <li class="header-nav-list-item-mobile">
+        <a class="header-nav-link-mobile" href="#services">Gallery</a>
+      </li>
+      <li class="header-nav-list-item-mobile">
+        <a class="header-nav-link-mobile" href="#howtoplay">How to play</a>
+      </li>
+      <li class="header-nav-list-item-mobile">
+        <a class="header-nav-link-mobile" href="#benefits">Benefits</a>
+      </li>
+      <li class="header-nav-list-item-mobile">
+        <a class="header-nav-link-mobile" href="#faq">FAQ</a>
+      </li>
 </header>
 
-    <home class="home">
+    <section id="home" class="home">
   <h1>Experience a delightful burst of candy puzzles!</h1>
-</home>
+</section>
 
-    <aboutus class="aboutus">
-  <h2>About game</h2>
-  <h3>
+    <section id="aboutus" class="aboutus">
+  <h2 class="aboutus-title">About us</h2>
+  <h2 class="aboutus-title-mob">About game</h2>
+  <p class="aboutus-text">
     Sweet Pop invites you to a colorful world of candy puzzles where players
     match sweets to achieve high scores. With hundreds of levels, each offering
-    a unique challenge, it’s perfect for players who enjoy vibrant, fast-paced
+    a unique challenge, it's perfect for players who enjoy vibrant, fast-paced
     puzzle games.
-  </h3>
-</aboutus>
+  </p>
+  <img
+    class="aboutus-img-1"
+    src="../img/About us/Realme 10(left-img).png"
+    alt="Realme 10"
+  />
+  <img
+    class="aboutus-img-2"
+    src="../img/About us/White.png"
+    alt="Realme 10 white"
+  />
+</section>
 
     <gallery class="gallery">
   <h2>Gallery</h2>
@@ -55,29 +121,125 @@
   <h2>How to Play</h2>
 </howtoplay>
 
-    <benefits class="benefits">
-  <h2>Benefits</h2>
-</benefits>
-
-    <faq class="faq">
-  <h2>Common Questions:</h2>
-</faq>
-
-    <footer class="footer">
-  <h2>Disclaimer:</h2>
-  <h3>
-    EPICJOYTIDE.COM IS A PLATFORM FOR ENTERTAINMENT PURPOSES ONLY. THE OUTCOMES
-    OF THE GAMES DO NOT REFLECT REAL-WORLD EVENTS. AVAILABLE TO USERS OVER 18
-    YEARS OF AGE. PLEASE PLAY RESPONSIBLY.
-  </h3>
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./privacy.html" class="nav-link">Privacy policy</a>
+    <section id="benefits" class="benefits">
+  <h2 class="benefits-title">Benefits</h2>
+  <ul class="benefits-list">
+    <div class="benefits-list-wrap-1">
+      <li class="benefits-list-item">
+        <img
+          class="benefits-list-item-img"
+          src="../img/Benefits/star.png"
+          alt="star"
+        />
+        <p class="benefits-list-item-desc">
+          Over 500+ levels <br />
+          of candy-<br />matching fun.
+        </p>
       </li>
 
-      <li class="nav-item">
-        <a href="./terms.html" class="nav-link">Terms and conditions</a>
+      <li class="benefits-list-item">
+        <img
+          class="benefits-list-item-img"
+          src="../img/Benefits/star.png"
+          alt="star"
+        />
+        <p class="benefits-list-item-desc">
+          Eye-catching graphics and addictive<br />
+          gameplay.
+        </p>
+      </li>
+      <li class="benefits-list-item">
+        <img
+          class="benefits-list-item-img"
+          src="../img/Benefits/star.png"
+          alt="star"
+        />
+        <p class="benefits-list-item-desc">
+          Over 500+ levels<br />
+          of candy-<br />
+          matching fun.
+        </p>
+      </li>
+    </div>
+    <div class="benefits-list-wrap-2">
+      <li class="benefits-list-item">
+        <img
+          class="benefits-list-item-img"
+          src="../img/Benefits/star.png"
+          alt="star"
+        />
+        <p class="benefits-list-item-desc">
+          Play offline without<br />
+          any internet<br />
+          connection.
+        </p>
+      </li>
+      <li class="benefits-list-item">
+        <img
+          class="benefits-list-item-img"
+          src="../img/Benefits/star.png"
+          alt="star"
+        />
+        <p class="benefits-list-item-desc">
+          Easy to learn, but <br />
+          challenging <br />
+          to master.
+        </p>
+      </li>
+    </div>
+    <div class="benefits-img-wrap">
+      <img
+        class="candy-img-left"
+        src="../img/Benefits/candy left.svg"
+        alt="candy left"
+      />
+      <img
+        class="candy-img-right"
+        src="../img/Benefits/candy right.svg"
+        alt="candy right"
+      />
+    </div>
+  </ul>
+</section>
+
+    <section id="faq" class="faq-section">
+  <h2 class="faq-title">Common Questions:</h2>
+  <ul class="faq-list">
+    <li class="faq-list-item">
+      <h3 class="faq-list-item-tittle">How do I start the game?</h3>
+      <p class="faq-list-item-desc">Just download and press 'Play'.</p>
+    </li>
+    <li class="faq-list-item">
+      <h3 class="faq-list-item-tittle">What makes Sweet Pop special?</h3>
+      <p class="faq-list-item-desc">
+        It's the vibrant graphics and unique level design.
+      </p>
+    </li>
+    <li class="faq-list-item">
+      <h3 class="faq-list-item-tittle">
+        Can I play without an internet connection?
+      </h3>
+      <p class="faq-list-item-desc">Yes, fully playable offline.</p>
+    </li>
+    <li class="faq-list-item">
+      <h3 class="faq-list-item-tittle">How do I get more lives?</h3>
+      <p class="faq-list-item-desc">
+        Lives regenerate over time, or you can purchase them.
+      </p>
+    </li>
+  </ul>
+</section>
+
+    <footer class="footer">
+  <p class="footer-text">All rights reserved epicjoytide.com | 2024</p>
+  <nav class="footer-nav">
+    <ul class="footer-nav-list">
+      <li class="footer-nav-item">
+        <a href="./privacy.html" class="footer-nav-link">Privacy policy</a>
+      </li>
+      <span class="footer-nav-span">|</span>
+      <li class="footer-nav-item">
+        <a href="./terms.html" class="footer-nav-link">Terms and conditions</a>
       </li>
     </ul>
   </nav>
