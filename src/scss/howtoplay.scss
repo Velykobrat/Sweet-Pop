@@ -1,7 +1,6 @@
 @media screen and (min-width: 768px) {
   .howtoplay {
     background: $_yellow_text_color;
-    padding: 60px 20px 40px 118px;
   }
 
   .howtoplay-title {
@@ -14,8 +13,6 @@
     margin-bottom: 24px;
   }
 
-  // .howtoplay-list {
-  // }
   .howtoplay-list-item {
     display: flex;
     flex-direction: row;
@@ -47,8 +44,8 @@
 
 @media screen and (max-width: 767px) {
   .howtoplay {
+    display: flex;
     background: $_yellow_text_color;
-    padding: 32px 20px;
   }
 
   .howtoplay-title {

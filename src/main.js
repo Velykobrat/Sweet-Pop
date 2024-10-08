@@ -22,22 +22,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let currentIndex = 0; // Індекс поточної картинки
 
-  function showImage(index) {
+  function showImages() {
     items.forEach((item, i) => {
-      item.classList.toggle('active', i === index); // Показати тільки активну картинку
+      item.classList.remove('active', 'prev', 'next'); // Прибираємо всі класи
     });
+
+    // Визначаємо індекси для показу
+    const prevIndex = (currentIndex - 1 + items.length) % items.length; // Попередня картинка
+    const nextIndex = (currentIndex + 1) % items.length; // Наступна картинка
+
+    // Додаємо класи для активної та сусідніх картинок
+    items[currentIndex].classList.add('active');
+    items[prevIndex].classList.add('prev');
+    items[nextIndex].classList.add('next');
   }
 
   prevButton.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + items.length) % items.length; // Перейти до попередньої картинки
-    showImage(currentIndex);
+    showImages();
   });
 
   nextButton.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % items.length; // Перейти до наступної картинки
-    showImage(currentIndex);
+    showImages();
   });
 
   // Відобразити першу картинку при завантаженні
-  showImage(currentIndex);
+  showImages();
 });
