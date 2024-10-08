@@ -1,3 +1,4 @@
+// src/scss/styles.scss
 @import './header.scss';
 @import './footer.scss';
 @import './common/reset.scss';
@@ -27,6 +28,10 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+section {
+  scroll-margin-top: 87px; /* Встановлюємо значення, яке відповідає висоті нашого хедера */
 }
 
 h1 {
