@@ -1,0 +1,52 @@
+.gallery {
+  padding: 20px 0;
+}
+
+.gallery-carousel {
+  position: relative; /* Для позиціонування елементів */
+  overflow: hidden; /* Сховати все, що виходить за межі */
+  width: 280px; /* Встановіть ширину контейнера */
+  margin: auto;
+}
+
+.gallery-item {
+  display: none; /* Сховати всі елементи за замовчуванням */
+}
+
+.gallery-item.active {
+  display: block; /* Показати тільки активний елемент */
+}
+
+.gallery-item img {
+  width: 100%; /* Ширина картинки на 100% контейнера */
+  border-radius: 8px; /* Закруглені кути */
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: center; /* Центруємо кнопки */
+  align-items: center; /* Вирівнюємо по вертикалі */
+  margin-top: 20px; /* Відступ зверху */
+}
+
+.gallery-items {
+  display: flex; /* Вирівнюємо елементи в ряд */
+  justify-content: space-between; /* Відстань між елементами */
+  margin: 0 20px; /* Відступи з боків */
+}
+
+.gallery-image {
+  width: 30px; /* Встановіть фіксовану ширину картинки */
+  height: auto; /* Висота автоматична для збереження пропорцій */
+}
+
+button {
+  background: none; /* Без фону */
+  border: none; /* Без рамки */
+  cursor: pointer; /* Змінюємо курсор при наведенні */
+}
+
+button img {
+  width: 40px; /* Встановіть ширину іконок кнопок */
+  height: auto; /* Висота автоматична для збереження пропорцій */
+}

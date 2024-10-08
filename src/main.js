@@ -14,3 +14,30 @@ closeMenuButton.addEventListener('click', () => {
 mobileNavList.addEventListener('click', () => {
   mobileNav.classList.remove('menu-open');
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.gallery-item');
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+
+  let currentIndex = 0; // Індекс поточної картинки
+
+  function showImage(index) {
+    items.forEach((item, i) => {
+      item.classList.toggle('active', i === index); // Показати тільки активну картинку
+    });
+  }
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length; // Перейти до попередньої картинки
+    showImage(currentIndex);
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % items.length; // Перейти до наступної картинки
+    showImage(currentIndex);
+  });
+
+  // Відобразити першу картинку при завантаженні
+  showImage(currentIndex);
+});

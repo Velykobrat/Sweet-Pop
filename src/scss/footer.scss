@@ -1,72 +1,20 @@
 @import './common/vars.scss';
 
-@media screen and (min-width: 768px) {
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $_header_bg_color;
-    padding: 24px 0 24px 0;
-  }
-
-  .footer-text {
-    flex: 1;
-    text-align: center;
-    color: $_main_text_color;
-    padding-left: 413px;
-    padding-right: 77px;
-    font-family: Inter;
-    font-size: 18px;
-    line-height: 18px;
-  }
-  .footer-nav {
-    padding-right: 20px;
-  }
-
-  .footer-nav-list {
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-  }
-
-  .footer-nav-item {
-    list-style: none;
-    color: $_main_text_color;
-    font-family: Inter;
-    font-size: 18px;
-    line-height: 18px;
-  }
-
-  .footer-nav-span {
-    color: $_main_text_color;
-    padding: 0 5px;
-    font-family: Inter;
-    font-size: 18px;
-    line-height: 18px;
-  }
-
-  .footer-nav-link {
-    text-decoration: underline;
-  }
-}
 .footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: $_header_bg_color;
-  padding: 24px 0 24px 0;
+  padding: 24px 20px;
 }
 
 .footer-text {
   flex: 1;
   text-align: center;
   color: $_main_text_color;
-  padding-left: 413px;
-  padding-right: 77px;
   font-family: Inter;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 18px;
 }
+
 .footer-nav {
   padding-right: 20px;
 }
@@ -78,10 +26,9 @@
 }
 
 .footer-nav-item {
-  list-style: none;
   color: $_main_text_color;
   font-family: Inter;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -89,23 +36,26 @@
   color: $_main_text_color;
   padding: 0 5px;
   font-family: Inter;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 18px;
 }
 
 .footer-nav-link {
   text-decoration: underline;
 }
+
+/* Адаптивні стилі */
 @media screen and (max-width: 767px) {
   .footer {
     flex-direction: column;
-    padding: 24px 20px 24px 20px;
+    padding: 24px 20px;
   }
+
   .footer-text {
-    padding: 0 20px;
     margin-bottom: 16px;
     text-align: center;
   }
+
   .footer-nav {
     padding: 0;
   }
