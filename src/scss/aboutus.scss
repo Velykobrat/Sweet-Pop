@@ -1,28 +1,49 @@
 @import './common/vars.scss';
-@media screen and (min-width: 768px) {
+
+.aboutus {
+  background: $_yellow_text_color;
+}
+
+.aboutus-title {
+  font-family: Norican;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.aboutus-text {
+  width: 100%;
+  font-family: Signika Negative;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: justify;
+}
+
+.aboutus-img-1,
+.aboutus-img-2 {
+  display: none;
+}
+
+/* Для ширших екранів (планшети та ПК) */
+@media screen and (min-width: 1199px) {
   .aboutus {
     position: relative;
-    background: $_yellow_text_color;
-    padding: 60px 20px 220px 118px;
   }
-  .aboutus-title {
-    font-family: Norican;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 40px;
-    text-align: center;
-    margin-bottom: 34px;
-  }
+
   .aboutus-text {
     width: 472px;
     height: 255px;
-    font-family: Signika Negative;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: justify;
   }
+
+  .aboutus-img-container {
+    position: relative;
+  }
+
   .aboutus-img-1 {
+    display: block;
     position: absolute;
     top: 100px;
     left: 510px;
@@ -31,39 +52,11 @@
   }
 
   .aboutus-img-2 {
+    display: block;
     position: absolute;
     top: 200px;
     right: -10px;
     z-index: 2;
     height: 377px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .aboutus {
-    background: $_yellow_text_color;
-    padding: 32px 20px;
-  }
-  .aboutus-title {
-    font-family: Norican;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 40px;
-    text-align: center;
-    margin-bottom: 24px;
-  }
-  .aboutus-text {
-    width: 100%;
-    font-family: Signika Negative;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: justify;
-  }
-  .aboutus-img-1 {
-    display: none;
-  }
-
-  .aboutus-img-2 {
-    display: none;
   }
 }

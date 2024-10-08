@@ -34,13 +34,14 @@ html {
 }
 
 .container {
+  min-width: 320px;
   max-width: 1200px; /* Максимальна ширина контейнера */
   margin: 0 auto; /* Центруємо контейнер */
-  padding: 0 15px;
+  padding: 32px 20px;
 }
 
 section {
-  scroll-margin-top: 87px; /* Встановлюємо значення, яке відповідає висоті нашого хедера */
+  scroll-margin-top: 66px; /* Встановлюємо значення, яке відповідає висоті нашого хедера */
 }
 
 h1 {

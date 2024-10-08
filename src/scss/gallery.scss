@@ -1,5 +1,11 @@
 .gallery {
-  padding: 20px 0;
+  background: $_header_bg_color;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: $_yellow_text_color;
 }
 
 .gallery-carousel {
@@ -7,6 +13,7 @@
   overflow: hidden; /* Сховати все, що виходить за межі */
   width: 280px; /* Встановіть ширину контейнера */
   margin: auto;
+  padding: 0 20px;
 }
 
 .gallery-item {
@@ -33,6 +40,7 @@
   display: flex; /* Вирівнюємо елементи в ряд */
   justify-content: space-between; /* Відстань між елементами */
   margin: 0 20px; /* Відступи з боків */
+  gap: 17px;
 }
 
 .gallery-image {
