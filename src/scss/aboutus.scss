@@ -28,7 +28,7 @@
 }
 
 /* Для ширших екранів (планшети та ПК) */
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 768px) {
   .aboutus {
     display: flex; /* Встановлюємо Flexbox для контейнера */
     position: relative;
