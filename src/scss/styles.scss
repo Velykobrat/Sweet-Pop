@@ -14,6 +14,8 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 1200px;
+  margin: 0 auto; /* Центруємо контейнер */
 }
 :root {
   --font-family: 'Signika Negative', sans-serif;
@@ -35,9 +37,10 @@ html {
 
 .container {
   min-width: 320px;
-  max-width: 1200px; /* Максимальна ширина контейнера */
+
   margin: 0 auto; /* Центруємо контейнер */
   padding: 32px 20px;
+  position: relative;
 }
 
 section {

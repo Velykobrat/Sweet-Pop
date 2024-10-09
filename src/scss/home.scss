@@ -1,10 +1,9 @@
 .home {
-  position: relative;
   background: $_header_bg_color;
   margin-top: 72px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .home {
     min-height: 680px;
   }
@@ -65,33 +64,32 @@ h1 {
 .left-image-container,
 .right-image-container {
   position: absolute;
-  top: -53%;
-  transform: rotate(-10deg);
+  top: -65%;
   opacity: 0;
   transition: all 1s ease;
 }
 
 .left-image-container {
-  left: -1250px; /* Початкове положення за межами екрана зліва */
+  left: -1200px; /* Початкове положення за межами екрана зліва */
 }
 
 .right-image-container {
-  right: -1250px; /* Початкове положення за межами екрана справа */
+  right: -1200px; /* Початкове положення за межами екрана справа */
 }
 
 /* Анімація для обох картинок */
 .slide-in .left-image-container {
-  left: -400px; /* Кінцеве положення для лівої картинки */
+  left: -290px; /* Кінцеве положення для лівої картинки */
   opacity: 1;
 }
 
 .slide-in .right-image-container {
-  right: -400px; /* Кінцеве положення для правої картинки */
+  right: -290px; /* Кінцеве положення для правої картинки */
   opacity: 1;
 }
 
 /* Вимкнення анімації на мобільних пристроях */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .left-image-container,
   .right-image-container {
     display: none; /* Приховати на мобільних */
