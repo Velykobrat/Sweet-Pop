@@ -4,9 +4,10 @@
   margin-top: 72px;
 }
 
-.image-container {
-  gap: 32px; /* Відстань між зображеннями */
-  margin-bottom: 32px; /* Відступ знизу для відокремлення від H1 */
+@media screen and (min-width: 768px) {
+  .home {
+    min-height: 680px;
+  }
 }
 
 .home-image {
@@ -14,6 +15,7 @@
   margin: auto;
 }
 
+// Sweet PoP вже з адаптивом
 .home-image:first-child {
   width: 260.273px;
   height: 99.492px;
@@ -22,6 +24,13 @@
   stroke-width: 3px;
   stroke: #fff;
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.25));
+}
+
+@media screen and (min-width: 768px) {
+  .home-image:first-child {
+    margin-bottom: 10px;
+    margin-top: 80px;
+  }
 }
 
 .home-image:last-child {
@@ -34,19 +43,62 @@
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.25));
 }
 
+// заголовок
 h1 {
-  color: var(--Yellow, #ffdb23); /* Колір тексту */
+  color: var(--Yellow, #ffdb23);
   text-align: center; /* Вирівнюємо текст по центру */
-
-  /* Стилі для H1 */
   font-family: 'Signika Negative';
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 20px; /* Відступ знизу */
+  margin-bottom: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  h1 {
+    margin-bottom: 56px;
+  }
+}
+
+/* Загальні стилі для контейнерів льодяники*/
+.left-image-container,
+.right-image-container {
+  position: absolute;
+  top: -53%;
+  transform: rotate(-10deg);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.left-image-container {
+  left: -1250px; /* Початкове положення за межами екрана зліва */
+}
+
+.right-image-container {
+  right: -1250px; /* Початкове положення за межами екрана справа */
+}
+
+/* Анімація для обох картинок */
+.slide-in .left-image-container {
+  left: -400px; /* Кінцеве положення для лівої картинки */
+  opacity: 1;
+}
+
+.slide-in .right-image-container {
+  right: -400px; /* Кінцеве положення для правої картинки */
+  opacity: 1;
+}
+
+/* Вимкнення анімації на мобільних пристроях */
+@media screen and (max-width: 768px) {
+  .left-image-container,
+  .right-image-container {
+    display: none; /* Приховати на мобільних */
+  }
+}
+
+// Кпопка Google Play
 .image-button-container {
   display: flex;
   width: 280px;
@@ -62,37 +114,34 @@ h1 {
 
 .image-button {
   display: flex;
-  align-items: center; /* Центруємо елементи по вертикалі */
+  align-items: center;
   text-decoration: none; /* Забираємо підкреслення з посилання */
-  color: inherit; /* Залишаємо колір тексту відповідно до батьківського елемента */
 }
 
 .image-button img {
   width: auto;
   height: auto;
-  margin-right: 10px; /* Відступ між іконкою і текстом */
+  margin-right: 10px;
 }
 
 .text-container {
   display: flex;
   width: 143px;
   height: 49px;
-  flex-direction: column; /* Стовпчик для текстових елементів */
-  justify-content: space-between; /* Відстань між текстами */
-  align-items: flex-start; /* Вирівнювання по лівому краю */
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .small-text {
   height: 19px;
-  flex-shrink: 0; /* Забороняємо зміну розміру */
-  align-self: stretch; /* Розтягнути на всю ширину контейнера */
+  flex-shrink: 0;
+  align-self: stretch;
   color: var(--White, #fff);
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* Висота рядка 24px */
-  text-transform: uppercase; /* Верхній регістр */
+  line-height: 150%;
 }
 
 .large-text {
@@ -101,5 +150,5 @@ h1 {
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 100%; /* Висота рядка 24px */
+  line-height: 100%;
 }
