@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .howtoplay {
     background: $_yellow_text_color;
   }
@@ -23,6 +23,7 @@
     background: #ffffff80;
     margin-bottom: 20px;
     border-radius: 8px;
+    margin-left: 98px;
   }
   .howtoplay-list-item:nth-child(even) {
     margin-left: auto;
@@ -43,7 +44,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
   .howtoplay {
     display: flex;
     background: $_yellow_text_color;
