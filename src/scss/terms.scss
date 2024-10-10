@@ -2,7 +2,7 @@
 @import './footer.scss';
 @import './common/vars.scss';
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .terms-section {
     padding: 40px 166px 32px 166px;
     background-color: $_header_bg_color;
@@ -42,7 +42,7 @@
     padding-top: 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .terms-section {
     padding: 24px 20px 0 20px;
     background-color: $_header_bg_color;

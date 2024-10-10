@@ -4,7 +4,12 @@
   background: $_yellow_text_color;
 }
 
-.container-aboutus {
+.aboutus-container {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 60px 118px 220px 118px;
+  position: relative;
+  max-width: 1200px;
 }
 
 .aboutus-title {
@@ -13,7 +18,7 @@
   font-weight: 400;
   line-height: 40px;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
 }
 
 .aboutus-text {
@@ -32,18 +37,11 @@
 }
 
 /* Для ширших екранів (планшети та ПК) */
-@media screen and (min-width: 1199px) {
-  .container-aboutus {
-    display: inline-block;
-    height: 509px;
-    width: 100%;
-  }
-
+@media screen and (min-width: 1200px) {
   .aboutus-text {
     width: 472px;
     height: 255px;
     flex-shrink: 0;
-    margin-left: 60px;
   }
 
   .aboutus-img-container {

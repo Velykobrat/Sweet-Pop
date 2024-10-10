@@ -1,6 +1,13 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .howtoplay {
     background: $_yellow_text_color;
+  }
+  .howtoplay-container {
+    min-width: 320px;
+    margin: 0 auto; /* Центруємо контейнер */
+    padding: 60px 20px 40px 118px;
+    position: relative;
+    max-width: 1200px;
   }
 
   .howtoplay-title {
@@ -23,7 +30,9 @@
     background: #ffffff80;
     margin-bottom: 20px;
     border-radius: 8px;
-    margin-left: 98px;
+  }
+  .howtoplay-list-item:last-child {
+    margin-bottom: 0;
   }
   .howtoplay-list-item:nth-child(even) {
     margin-left: auto;
@@ -44,7 +53,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1199px) {
   .howtoplay {
     display: flex;
     background: $_yellow_text_color;
