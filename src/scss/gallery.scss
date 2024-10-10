@@ -9,52 +9,108 @@
 }
 
 .gallery-carousel {
-  position: relative; /* Для позиціонування елементів */
-  overflow: hidden; /* Сховати все, що виходить за межі */
-  width: 280px; /* Встановіть ширину контейнера */
+  position: relative;
+  overflow: hidden;
+  width: 280px;
   margin: auto;
   padding: 0 20px;
 }
 
 .gallery-item {
-  display: none; /* Сховати всі елементи за замовчуванням */
+  display: none;
 }
 
 .gallery-item.active {
-  display: block; /* Показати тільки активний елемент */
+  display: block;
 }
 
 .gallery-item img {
-  width: 100%; /* Ширина картинки на 100% контейнера */
-  border-radius: 8px; /* Закруглені кути */
+  width: 100%;
+  border-radius: 8px;
 }
 
 .gallery-controls {
   display: flex;
-  justify-content: center; /* Центруємо кнопки */
-  align-items: center; /* Вирівнюємо по вертикалі */
-  margin-top: 20px; /* Відступ зверху */
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .gallery-items {
-  display: flex; /* Вирівнюємо елементи в ряд */
-  justify-content: space-between; /* Відстань між елементами */
-  margin: 0 20px; /* Відступи з боків */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
   gap: 17px;
 }
 
 .gallery-image {
-  width: 30px; /* Встановіть фіксовану ширину картинки */
-  height: auto; /* Висота автоматична для збереження пропорцій */
+  width: 30px;
+  height: auto;
 }
 
 button {
-  background: none; /* Без фону */
-  border: none; /* Без рамки */
+  background: none;
+  border: none;
   cursor: pointer; /* Змінюємо курсор при наведенні */
 }
 
 button img {
   width: 44px;
   height: 44px;
+}
+
+/* Стилі для великих екранів (768px і більше) */
+@media (min-width: 768px) {
+  .gallery-carousel {
+    display: flex;
+    width: 964px;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+  }
+
+  .gallery-item {
+    display: none;
+    flex: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: scale(0.9);
+    opacity: 0;
+    flex-shrink: 0;
+  }
+
+  .gallery-item.active {
+    display: block;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .gallery-item.prev,
+  .gallery-item.next {
+    display: block;
+    opacity: 0.7;
+  }
+
+  .gallery-item.active img {
+    transition: transform 0.5s ease;
+    width: 275px;
+    height: 596px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: lightgray 50% / cover no-repeat;
+    box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.25);
+  }
+
+  .gallery-item.prev img,
+  .gallery-item.next img {
+    width: 236px;
+    height: 509px;
+    flex-shrink: 0;
+  }
+
+  .gallery-item.active,
+  .gallery-item.prev,
+  .gallery-item.next {
+    display: flex;
+    justify-content: center;
+  }
 }
