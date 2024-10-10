@@ -45,7 +45,7 @@
 // заголовок
 h1 {
   color: var(--Yellow, #ffdb23);
-  text-align: center; /* Вирівнюємо текст по центру */
+  text-align: center;
   font-family: 'Signika Negative';
   font-size: 36px;
   font-style: normal;
@@ -70,21 +70,21 @@ h1 {
 }
 
 .left-image-container {
-  left: -1200px; /* Початкове положення за межами екрана зліва */
+  left: -1200px;
 }
 
 .right-image-container {
-  right: -1200px; /* Початкове положення за межами екрана справа */
+  right: -1200px;
 }
 
 /* Анімація для обох картинок */
 .slide-in .left-image-container {
-  left: 30px; /* Кінцеве положення для лівої картинки */
+  left: 30px;
   opacity: 1;
 }
 
 .slide-in .right-image-container {
-  right: 10px; /* Кінцеве положення для правої картинки */
+  right: 30px;
   opacity: 1;
 }
 
