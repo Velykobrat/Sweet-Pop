@@ -1,10 +1,18 @@
 @import './common/vars.scss';
 
 .footer {
-  display: flex;
-  justify-content: space-between;
   background-color: $_header_bg_color;
   padding: 24px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .footer-text {
@@ -14,6 +22,7 @@
   font-size: 16px;
   line-height: 18px;
   flex: 1;
+  margin-left: 250px;
 }
 
 .footer-nav {
@@ -49,19 +58,18 @@
 
 /* Адаптивні стилі */
 @media screen and (max-width: 1000px) {
-  .footer {
+  .footer-content {
     flex-direction: column;
     align-items: center;
-    padding: 24px 20px;
   }
 
   .footer-text {
     margin-bottom: 16px;
     text-align: center;
+    margin-left: 0;
   }
 
   .footer-nav {
-    padding: 0;
     justify-content: center;
   }
 
