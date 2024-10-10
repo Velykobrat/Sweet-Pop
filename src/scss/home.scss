@@ -64,7 +64,7 @@ h1 {
 .left-image-container,
 .right-image-container {
   position: absolute;
-  top: -65%;
+  top: 5%;
   opacity: 0;
   transition: all 1s ease;
 }
@@ -79,12 +79,12 @@ h1 {
 
 /* Анімація для обох картинок */
 .slide-in .left-image-container {
-  left: -290px; /* Кінцеве положення для лівої картинки */
+  left: 30px; /* Кінцеве положення для лівої картинки */
   opacity: 1;
 }
 
 .slide-in .right-image-container {
-  right: -290px; /* Кінцеве положення для правої картинки */
+  right: 10px; /* Кінцеве положення для правої картинки */
   opacity: 1;
 }
 
