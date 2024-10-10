@@ -29,13 +29,9 @@
 
 /* Для ширших екранів (планшети та ПК) */
 @media screen and (min-width: 768px) {
-  .aboutus {
-    display: flex;
-    position: relative;
-    padding: 60px 20px 220px 118px;
-  }
   .container-aboutus {
-    height: 609px;
+    display: inline-block;
+    height: 509px;
     width: 100%;
   }
 
