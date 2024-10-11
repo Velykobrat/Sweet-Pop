@@ -21,35 +21,35 @@ function animateHowToPlayItems() {
   });
 }
 
-const howToPlaySection = document.getElementById('howtoplay');
+// const howToPlaySection = document.getElementById('howtoplay');
 
-const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateHowToPlayItems();
-      }
-    });
-  },
-  {
-    threshold: 0.1,
-  }
-);
+// const observer = new IntersectionObserver(
+//   entries => {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {
+//         animateHowToPlayItems();
+//       }
+//     });
+//   },
+//   {
+//     threshold: 0.1,
+//   }
+// );
 
-observer.observe(howToPlaySection);
+// observer.observe(howToPlaySection);
 
-document.querySelectorAll('a[href="#howtoplay"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
+// document.querySelectorAll('a[href="#howtoplay"]').forEach(anchor => {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault();
 
-    howToPlaySection.scrollIntoView({
-      behavior: 'smooth',
-    });
+//     howToPlaySection.scrollIntoView({
+//       behavior: 'smooth',
+//     });
 
-    setTimeout(() => {
-      animateHowToPlayItems();
-    }, 1000);
-  });
-});
+//     setTimeout(() => {
+//       animateHowToPlayItems();
+//     }, 1000);
+//   });
+// });
 
-let isScrolling;
+// let isScrolling;
