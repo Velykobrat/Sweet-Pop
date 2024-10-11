@@ -3,26 +3,20 @@
   margin-top: 72px;
 }
 .home-container {
+  min-height: 591px;
   min-width: 320px;
-  margin: 0 auto; /* Центруємо контейнер */
-  padding: 80px 20px 147px;
+  margin: 0 auto;
+  padding: 32px 20px;
   position: relative;
   max-width: 1200px;
 }
-
-@media screen and (min-width: 1200px) {
-  .home {
-    min-height: 680px;
-  }
-}
-
 .home-image {
   display: flex;
   margin: auto;
 }
-
 // Sweet PoP вже з адаптивом
 .home-image:first-child {
+  margin-bottom: 32px;
   width: 260.273px;
   height: 99.492px;
   flex-shrink: 0;
@@ -31,28 +25,20 @@
   stroke: #fff;
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.25));
   animation: slide-up 1s ease forwards;
-  animation-delay: 0.2s; /* Поява першою */
+  animation-delay: 0.2s;
 }
-
-@media screen and (min-width: 1200px) {
-  .home-image:first-child {
-    margin-bottom: 42.5px;
-  }
-}
-
 .home-image:last-child {
   width: 276.324px;
   height: 139.945px;
-  margin-bottom: 5px;
+  margin-bottom: 32px;
   flex-shrink: 0;
   fill: var(--Yellow, #ffdb23);
   stroke-width: 3px;
   stroke: #fff;
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.25));
   animation: slide-up 1s ease forwards;
-  animation-delay: 0.4s; /* Поява другою */
+  animation-delay: 0.4s;
 }
-
 // заголовок
 h1 {
   color: var(--Yellow, #ffdb23);
@@ -64,15 +50,8 @@ h1 {
   line-height: normal;
   margin-bottom: 24px;
   animation: slide-up 1s ease forwards;
-  animation-delay: 0.6s; /* Поява третьою */
+  animation-delay: 0.6s;
 }
-
-@media screen and (min-width: 1200px) {
-  h1 {
-    margin-bottom: 56px;
-  }
-}
-
 /* Загальні стилі для контейнерів льодяники */
 .left-image-container,
 .right-image-container {
@@ -81,36 +60,30 @@ h1 {
   opacity: 0;
   transition: all 1s ease;
 }
-
 .left-image-container {
   left: -1200px;
 }
-
 .right-image-container {
   right: -1200px;
 }
-
 /* Анімація для обох картинок */
 .slide-in .left-image-container {
   top: 60px;
   left: 30px;
   opacity: 1;
 }
-
 .slide-in .right-image-container {
   top: 60px;
   right: 30px;
   opacity: 1;
 }
-
 /* Вимкнення анімації на мобільних пристроях */
 @media screen and (max-width: 1199px) {
   .left-image-container,
   .right-image-container {
-    display: none; /* Приховати на мобільних */
+    display: none;
   }
 }
-
 // Кпопка Google Play
 .image-button-container {
   display: flex;
@@ -124,21 +97,18 @@ h1 {
   border: 2px solid var(--Yellow, #ffdb23);
   background: #000;
   animation: slide-up 1s ease forwards;
-  animation-delay: 0.8s; /* Поява четвертою */
+  animation-delay: 0.8s;
 }
-
 .image-button {
   display: flex;
   align-items: center;
-  text-decoration: none; /* Забираємо підкреслення з посилання */
+  text-decoration: none;
 }
-
 .image-button img {
   width: 45px;
   height: 50px;
   margin-right: 24px;
 }
-
 .text-container {
   display: flex;
   width: 143px;
@@ -146,7 +116,6 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .small-text {
   height: 19px;
   flex-shrink: 0;
@@ -158,7 +127,6 @@ h1 {
   font-weight: 400;
   line-height: 150%;
 }
-
 .large-text {
   color: var(--White, #fff);
   font-family: Inter, sans-serif;
@@ -167,7 +135,6 @@ h1 {
   font-weight: 500;
   line-height: 100%;
 }
-
 /* Анімація знизу догори */
 @keyframes slide-up {
   0% {
@@ -177,5 +144,26 @@ h1 {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home-container {
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 80px 20px 147px;
+    position: relative;
+    max-width: 1200px;
+  }
+  .home-image:last-child {
+    margin-bottom: 5px;
+  }
+  h1 {
+    margin-bottom: 56px;
+  }
+  .home-image:first-child {
+    margin-bottom: 42.5px;
+  }
+  .home {
+    min-height: 680px;
   }
 }

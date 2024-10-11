@@ -1,3 +1,60 @@
+@media screen and (max-width: 1199px) {
+  .howtoplay-container {
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    position: relative;
+    max-width: 1200px;
+  }
+  .howtoplay {
+    display: flex;
+    background: $_yellow_text_color;
+  }
+
+  .howtoplay-title {
+    font-family: Norican;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .howtoplay-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 280px;
+    height: 309px;
+    background: #ffffff80;
+    margin-bottom: 24px;
+  }
+  .howtoplay-list-item-last {
+    margin-bottom: 0px;
+  }
+  .howtoplay-list-item-img {
+    width: 177px;
+    height: 177px;
+    margin-bottom: 8px;
+  }
+  .howtoplay-list-item:nth-child(1) .howtoplay-list-item-img,
+  .howtoplay-list-item:nth-child(3) .howtoplay-list-item-img,
+  .howtoplay-list-item:nth-child(4) .howtoplay-list-item-img {
+    margin-top: 26px;
+  }
+  .howtoplay-list-item:nth-child(2) .howtoplay-list-item-img {
+    margin-top: 8px;
+  }
+
+  .howtoplay-list-item-desc {
+    font-family: Signika Negative;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .howtoplay {
     background: $_yellow_text_color;
@@ -50,54 +107,5 @@
     font-weight: 500;
     line-height: 36px;
     text-align: left;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .howtoplay {
-    display: flex;
-    background: $_yellow_text_color;
-  }
-
-  .howtoplay-title {
-    font-family: Norican;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 40px;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 24px;
-  }
-
-  .howtoplay-list-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 280px;
-    height: 309px;
-    background: #ffffff80;
-    margin-bottom: 20px;
-  }
-  .howtoplay-list-item-img {
-    width: 177px;
-    height: 177px;
-    margin-bottom: 8px;
-  }
-  .howtoplay-list-item:nth-child(1) .howtoplay-list-item-img,
-  .howtoplay-list-item:nth-child(3) .howtoplay-list-item-img,
-  .howtoplay-list-item:nth-child(4) .howtoplay-list-item-img {
-    margin-top: 26px;
-  }
-  .howtoplay-list-item:nth-child(2) .howtoplay-list-item-img {
-    margin-top: 8px;
-  }
-
-  .howtoplay-list-item-desc {
-    font-family: Signika Negative;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
-    text-align: center;
   }
 }
