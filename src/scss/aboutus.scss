@@ -4,26 +4,18 @@
   background: $_yellow_text_color;
 }
 
-.aboutus-container {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 60px 118px 220px 118px;
-  position: relative;
-  max-width: 1200px;
-}
-
 .aboutus-title {
   font-family: Norican;
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
   text-align: center;
-  margin-bottom: 34px;
+  margin-bottom: 24px;
 }
 
 .aboutus-text {
   width: 100%;
-  min-width: 300px;
+  min-width: 279px;
   font-family: Signika Negative;
   font-size: 24px;
   font-weight: 400;
@@ -35,9 +27,35 @@
 .aboutus-img-2 {
   display: none;
 }
-
+@media screen and (max-width: 1199px) {
+  .aboutus-container {
+    min-width: 279px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    position: relative;
+    max-width: 1200px;
+  }
+  .aboutus-images {
+    display: none;
+  }
+}
 /* Для ширших екранів (планшети та ПК) */
 @media screen and (min-width: 1200px) {
+  .aboutus-container {
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 60px 118px 220px 118px;
+    position: relative;
+    max-width: 1200px;
+  }
+  .aboutus-title {
+    font-family: Norican;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 34px;
+  }
   .aboutus-text {
     width: 472px;
     height: 255px;
@@ -72,10 +90,5 @@
     width: 423px;
     height: 377.55px;
     flex-shrink: 0;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .aboutus-images {
-    display: none;
   }
 }
