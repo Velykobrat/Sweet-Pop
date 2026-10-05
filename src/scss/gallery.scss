@@ -64,6 +64,11 @@ button img {
   width: 44px;
   height: 44px;
 }
+
+.next img {
+  transform: scaleX(-1);
+}
+
 /* Стилі для великих екранів */
 @media (min-width: 1200px) {
   .gallery-container {
@@ -90,7 +95,9 @@ button img {
   .gallery-item {
     display: none;
     flex: 1;
-    transition: transform 0.9s ease, opacity 0.9s ease;
+    transition:
+      transform 0.9s ease,
+      opacity 0.9s ease;
     transform: scale(0.9);
     opacity: 0;
     flex-shrink: 0;

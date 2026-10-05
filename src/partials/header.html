@@ -32,18 +32,24 @@
   <nav class="header-nav-mobile" aria-label="Main Navigation for Mobile">
     <img class="header-logo" src="./img/home/logo.png" alt="logo-game" />
     <!--Кнопка відкриття мобільного меню-->
-    <button class="burger-menu" aria-label="Open Navigation">
+    <button
+      class="burger-menu"
+      type="button"
+      aria-label="Open Navigation"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
       <span class="burger-line"></span>
       <span class="burger-line"></span>
       <span class="burger-line"></span>
     </button>
 
-    <ul class="header-nav-list-mobile">
-      <!--Кнопка закриття мобільного меню-->
-      <button class="close-menu" aria-label="Close Navigation">
-        <img src="./img/home/Burger menu.svg" alt="Close menu" />
-      </button>
+    <!--Кнопка закриття мобільного меню-->
+    <button class="close-menu" type="button" aria-label="Close Navigation">
+      <img src="./img/home/Burger menu.svg" alt="" />
+    </button>
 
+    <ul class="header-nav-list-mobile" id="mobile-menu">
       <li class="header-nav-list-item-mobile">
         <a class="header-nav-link-mobile" href="#home">Home</a>
       </li>

@@ -28,6 +28,7 @@ const observer = new IntersectionObserver(
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         animateHowToPlayItems();
+        observer.unobserve(entry.target);
       }
     });
   },
@@ -51,5 +52,3 @@ document.querySelectorAll('a[href="#howtoplay"]').forEach(anchor => {
     }, 1000);
   });
 });
-
-let isScrolling;
